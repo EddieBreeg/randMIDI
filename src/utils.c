@@ -63,7 +63,7 @@ int scanNotes(char buffer[])
     int count = 0;
     while(getString(str))
     {
-        buffer[count] = (char)atoi(str);
+        buffer[count] = ((unsigned char)atoi(str)) % 128;
         count++;
         memset(str, 0, 20);
     }

@@ -51,7 +51,8 @@ int main(int argc, char* argv[])
     strcpy(outFileName, argv[3]);
     strcpy(outFileName + length, ".mid");
 
-    m = scanNotes(notes);
+    printf("Notes (submit one by one):\n");
+    
     while(!m)
     {
         printf("Please provide a valid list of notes!\n");
